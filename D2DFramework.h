@@ -16,6 +16,7 @@ public:
 public:
 	ID2D1Factory* GetD2DFactory() { return mspD2DFactory.Get(); }
 	ID2D1HwndRenderTarget* GetRenderTarget() { return mspRenderTarget.Get(); }
+	HWND GetWindowHandle() { return mHwnd; }
 
 protected:
 	Microsoft::WRL::ComPtr<ID2D1Factory> mspD2DFactory{};
